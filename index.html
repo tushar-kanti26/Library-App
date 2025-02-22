@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+         <div class="logo-container">
+            <h1>Libby.</h1>
+            <p>The library reading app</p>
+         </div>
+         <div class="tag-bar">
+            <ul class="options">
+                <li><a href="#">Features</a></li>
+                <li><a href="#intro">Getting Started</a></li>
+                <li><a href="#add-box">Add Book</a></li>
+                <li><a href="#list">Book Table</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+         </div>
+        </div>
+        <div class="intro" >
+            <div class="intro-box" id="intro">
+                <h2>Read with Libby</h2>
+                <p>Borrow & read ebooks, audiobooks, magazines, and more online from your local library for free! Libby is the library reading app by OverDrive, loved by millions of readers worldwide!</p>
+            </div>
+        </div>
+        
+        <div class="download-box">
+            <div class="logo-box">
+                <img src="libby-circle-hiding.jpg" alt="logo">
+            </div>
+            <div class="info">
+                <h2>Download Libby today!</h2>
+                <div class="link-box">
+                    <div class="link">
+                        <img src="app-store.svg" alt="App store">
+                    </div>
+                    <div class="link">
+                        <img src="google.png" alt="Googl e play">
+                    </div>
+                    <div class="link">
+                        <img src="amazon-appstore.png" alt="amazon store">
+                    </div>
+                </div>
+                <p>or read & listen at Libbyapp.com</p>
+            </div>
+            <div class="tablet-box">
+                <img src="Libby_Tablet_and_Phone.png" alt="tablet">
+            </div>
+        </div>
+        <!-- <div class="book-container">
+            <div class="book-list">
+                <div class="book-image">
+                 <img src="book.png" alt="book">
+                </div>
+                <div class="book-desc">
+                    <h2 class="book-name">Clean Code: A Handbook of Agile Software Craftsmanship</h2>
+                    <p class="Author">Robert C. Martin</p>
+                    <p class="publication">2008</p>
+                    <p class="Genre">Software Development, Programming</p>
+                </div>
+            </div>
+        </div> -->
+        <div class="function">
+            <div class="add" id="add-box">
+                <div class="add-button">
+                    <button id="book-adding">ADD BOOK</button>
+                    <p id="successMessage"></p>
+                </div>
+                <div class="form-container">
+                    <h2>Add a Book</h2>
+                    <form id="bookForm">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" required>
+            
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" required>
+            
+                        <label for="publication">Publication Year:</label>
+                        <input type="number" id="publication" min="1000" max="2100" required>
+            
+                        <label for="genre">Genre:</label>
+                        <select id="genre">
+                            <option value="Fiction">Fiction</option>
+                            <option value="Non-fiction">Non-fiction</option>
+                            <option value="Mystery">Mystery</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Biography">Biography</option>
+                        </select>
+                        <button type="submit" id="submitbutton">Add Book</button>
+                    </form>
+                </div>
+            </div>
+            <div class="display-list">
+                <button id="list">Books Available</button>
+                <div class="book-list">
+                    <table id="bookTable">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Publication Year</th>
+                                <th>Genre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Books will be added here dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <div class="search">
+            <div class="search-box">
+                <form id="searchBook">
+                    <label for="stitle">Title:</label>
+                    <input type="text" id="stitle">
+                    <label for="sauthor">Author:</label>
+                    <input type="text" id="sauthor">
+                    <button type="submit" id="searchButton">Search</button>
+                </form>
+            </div>
+            <div class="search-item">
+                <div class="bookinfo">
+                    <p id="btitle">Harry Potter</p>
+                    <p id="bauthor">J.K Rowling</p>
+                    <p id="bpublication">2008</p>
+                    <p id="bgenre">Fiction</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttom-container" id="footer">
+            <div class="logobox">
+                <div class="logo-image">
+                    <img src="libby-circle-hiding.jpg" alt="logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Libby</h1>
+                </div>
+            </div>
+            <div class="text">
+                <p>Get started with Libby today. Download the app for free.</p>
+            </div>
+            <div class="link-box">
+                <div class="link">
+                    <img src="app-store.svg" alt="App store">
+                </div>
+                <div class="link-google">
+                    <img src="google.png" alt="Googl e play">
+                </div>
+            </div>
+            <div class="contactlist">
+                <div class="contact">
+                    <img src="facebook.png" alt="">
+                </div>
+                <div class="contact">
+                    <img src="instagram.png" alt="">
+                </div>
+                <div class="contact">
+                    <img src="twitter.png" alt="">
+                </div>
+                <div class="contact">
+                    <img src="tik-tok.png" alt="">
+                </div>
+                <div class="contact">
+                    <img src="youtube.png" alt="">
+                </div>
+            </div>
+            <div class="end-box">
+                <p>powered by</p>
+                <h1>OverDrive</h1>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
